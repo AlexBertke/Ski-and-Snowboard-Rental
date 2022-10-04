@@ -592,19 +592,11 @@ while strNewCustomer == 'Y' or strNewCustomer == 'y':
 
         lstCustomerlist[intCustomerID].RentalBasis = strRentalBasis
 
-
-        ## Rental time
-        #blnInputValidated = bool(False)
-        #while blnInputValidated == False:
-        #    intRentalAmountOfTime = input("How Many " + strRentalBasis + " Would You Like To Rent For? : ")
-        #    intRentalAmountOfTime = Validate_Rental_Bases_Time_Amount_Input(intRentalAmountOfTime)
-
+        
         # Set Time At Rental Request (to use upon return)
         lstCustomerlist[intCustomerID].rentalTime = datetime.now()
 
-        ####
-
-
+        
         # Cupon code
         blnInputValidated = bool(False)
         while blnInputValidated == False: 
@@ -675,85 +667,4 @@ while strNewCustomer == 'Y' or strNewCustomer == 'y':
         strNewCustomer = input("Next Customer? Or if you would like to do something else, enter Y: ")
         strNewCustomer = Validate_Next_Customer_Input(strNewCustomer)
     
-
-
-
-
-    #intRequestRentalFromCustSkis = input("Enter How Many Skis Would You LIke To Rent: ")
-    #intRentalTimeBasisCust = input("Would You Like To Rent For A Certain Number Hours, Days or Weeks. Enter 'Hourly' for Hours, 'Daily' for Days Or 'Weekly' for Weeks. ")
-    #intRequestRentalFromCustSnowboards = input("Enter How Many Snowboards Would You LIke To Rent: ")
-
-
-
-
-
-
-
-    ##Check
-    #shop1.RentSkisOnHourlyBasis(intRequestRentalFromCustSkis)
-    #shop1.RentSkisOnDailyBasis(-1)
-
-    ##Initiate Rental - Check
-    #shop1.RentSnowBoardStockOnHourlyBasis()
-    #shop1.RentSnowBoardStockOnDailyBasis(-1)
-    #shop2.RentSnowBoardStockOnWeeklyBasis(14)
-
-
-    ##Check
-    ## Create customer
-    #customer1 = Customer()
-    #customer2 = Customer()
-    #customer3 = Customer()
-    #customer4 = Customer()
-
-    ##Customerlist.append (Customer())
-    ##for obj in Customerlist:
-    ##    if 
-
-    ## Rental basis. Check
-    #customer1.RentalBasis = 1 #'Hourly'
-    #customer2.RentalBasis = 2 #'Daily'
-    #customer3.RentalBasis = 2 #'Daily'
-    #customer4.RentalBasis = 3 #'Weekly'
-
-    ## Number of snowboards and skis. Check
-    #customer1.NumberOfSkis = 2
-    #customer2.NumberOfSkis = 1
-    #customer3.NumberOfSkis = 1
-    #customer4.NumberOfSkis = 2
-
-    #customer1.NumberOfSnowBoards = 3
-    #customer2.NumberOfSnowBoards = 1
-    #customer3.NumberOfSnowBoards = 2
-    #customer4.NumberOfSnowBoards = 2
-
-    ## Rental time. Check
-    #customer1.rentalTime = datetime.now() + timedelta(hours=-3)
-    #customer2.rentalTime = datetime.now() + timedelta(days=-2)
-    #customer3.rentalTime = datetime.now() + timedelta(days=-5)
-    #customer4.rentalTime = datetime.now() + timedelta(days=-14)
-
-    ## Cupon code. Check
-    #customer1.CuponCode = '123BBP'
-    #customer2.CuponCode = '456TTT'
-    #customer3.CuponCode = '789BBP'
-    #customer4.CuponCode = '101TTT'
-
-    ## create request to return the bike
-    #request1 = customer1.returnEquipment()
-    #request2 = customer2.returnEquipment()
-    #request3 = customer3.returnEquipment()
-    #request4 = customer4.returnEquipment()
-
-    ## return the bike to shop and get a bill
-    #shop1.ReturnEquipment(request1) 
-    #shop1.ReturnEquipment(request2) 
-    #shop1.ReturnEquipment(request3) 
-    #shop1.ReturnEquipment(request4) 
-
-
-    #Qs for Bob
-    #How prevent someone from choosing 2 before choosing 1? 
-    #Accumulation not working right 
-
     
